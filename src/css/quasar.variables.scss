@@ -1,10 +1,15 @@
-// Colors
+//* Colors
 $primary: #11b80e;
 $secondary: #374835;
 
-// Breakpoints
+//* Breakpoints
 @mixin xs-device {
   @media (max-width: 600px) {
     @content;
   }
+}
+
+//* Spacing
+.custom-spacing-border {
+  padding: 0 12px;
 }

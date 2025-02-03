@@ -1,5 +1,5 @@
 <template>
-  <q-header class="header bg-secondary row" elevated>
+  <q-header class="header bg-secondary row">
     <q-toolbar class="toolbar justify-around">
       <div class="row">
         <q-img class="logo-navbar" src="../assets/navbar-logo.png"></q-img>
