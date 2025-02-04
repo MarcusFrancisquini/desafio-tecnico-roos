@@ -28,7 +28,7 @@
     font-size: 17px;
   }
 }
-//? Home page
+//? Hero
 .hero {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -80,5 +80,22 @@
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.95) 100%);
   @include xs-device {
     display: none;
+  }
+}
+//? Section Transformar
+.section-transformar {
+  height: 150px;
+}
+.cards-projetos {
+  width: 55rem;
+  gap: 10px;
+  .card {
+    border-radius: 12px;
+  }
+  .card-text-num {
+    font-size: 18px;
+  }
+  .card-text-info {
+    font-size: 13px;
   }
 }
