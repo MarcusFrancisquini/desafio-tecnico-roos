@@ -7,8 +7,8 @@ $black: #141414;
 $grey: #888888;
 
 //* Breakpoints
-@mixin xs-device {
-  @media (max-width: 600px) {
+@mixin sm-device {
+  @media (max-width: 660px) {
     @content;
   }
 }
@@ -16,4 +16,5 @@ $grey: #888888;
 //* Spacing
 .custom-spacing-border {
   padding: 0 12px;
+  width: 55rem;
 }
