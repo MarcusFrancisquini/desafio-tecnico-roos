@@ -90,11 +90,28 @@
 //? Section Transformar
 .section-transformar {
   height: 150px;
+  @include sm-device {
+    height: auto;
+    padding: 20px 0;
+  }
+}
+.section-content {
+  h6 {
+    @include sm-device {
+      padding-bottom: 20px;
+    }
+  }
+  @include sm-device {
+    justify-content: center;
+  }
 }
 .cards-projetos {
-  width: 55rem;
+  gap: 10px;
   .card {
     border-radius: 12px;
+    @include sm-device {
+      width: 100%;
+    }
   }
   .card-text-num {
     font-size: 18px;
@@ -103,4 +120,3 @@
     font-size: 13px;
   }
 }
-/*TODO fazer o responsivo desta section*/

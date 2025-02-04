@@ -23,9 +23,9 @@
   </section>
   <!-- Section Transformar -->
   <section class="section-transformar bg-black row justify-center">
-    <div class="custom-spacing-border row">
-      <div class="cards-projetos row items-center justify-between">
-        <h6 class="text-white">Ajudamos a transformar...</h6>
+    <div class="section-content custom-spacing-border row justify-between items-center">
+      <h6 class="text-white">Ajudamos a transformar...</h6>
+      <div class="cards-projetos row">
         <div class="card row bg-white q-px-md q-py-md items-center">
           <q-avatar size="40px" color="green-1" text-color="green-2" font-size="18px">
             <q-icon name="fa-solid fa-arrow-up" />
