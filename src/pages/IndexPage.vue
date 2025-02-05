@@ -56,6 +56,47 @@
       </div>
     </div>
   </section>
+  <!-- Sobre nós -->
+  <section class="section-about row justify-center">
+    <div class="about custom-spacing-border row">
+      <q-img class="logo-about" src="../assets/logo-about.png" alt="Logo" />
+      <div class="about-content column justify-between">
+        <div class="about-texts">
+          <div class="row items-center">
+            <q-img class="about-icon" src="../assets/logo-icon.png" />
+            <h4 class="q-pl-sm text-weight-medium text-grey-1">Sobre nós</h4>
+          </div>
+          <p class="q-mt-md text-grey">
+            Lorem ipsum dolor sit amet consectetur. Diam duis mauris consequat at. Congue tellus
+            aliquam ac malesuada. Morbi gravida ut nunc elementum risus. Sit enim nulla risus sed
+            mauris consequat. In massa ut consectetur nascetur dolor amet. Proin ridiculus mi quis
+            euismod quam sit nullam at leo. At adipiscing amet enim feugiat vitae. Ultrices nunc
+            ipsum mauris lacus faucibus dolor in euismod urna. Enim auctor nisi ac commodo laoreet
+            enim massa sagittis aliquam.
+          </p>
+          <p class="txt-mobile-out no-margin text-grey">
+            Lorem ipsum dolor sit amet consectetur. Diam duis mauris consequat at. Congue tellus
+            aliquam ac malesuada. Morbi gravida ut nunc elementum risus. Sit enim nulla risus sed
+            mauris consequat. In massa ut consectetur nascetur dolor amet. Proin ridiculus mi quis
+            euismod quam sit nullam at leo. At adipiscing amet enim feugiat vitae. Ultrices nunc
+            ipsum mauris lacus faucibus dolor in euismod urna.
+          </p>
+        </div>
+        <p class="no-margin text-primary text-weight-medium">
+          Ler História completa
+          <q-icon class="q-pl-xs" color="primary" name="fa-solid fa-arrow-right-long" />
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Sobre nós pt. 2 -->
+  <section class="section-about-2 row justify-center">
+    <div class="custom-spacing-border">
+      <div class="about-two">
+        <!-- TODO TERMINAR ESSA BAGAÇA -->
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>

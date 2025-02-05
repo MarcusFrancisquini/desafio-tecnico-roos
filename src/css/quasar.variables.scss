@@ -5,10 +5,17 @@ $green-1: #d1e8c8;
 $green-2: #aad2a1;
 $black: #141414;
 $grey: #888888;
+$grey-1: #333539;
 
 //* Breakpoints
 @mixin sm-device {
   @media (max-width: 660px) {
+    @content;
+  }
+}
+
+@mixin md-device {
+  @media (max-width: 880px) {
     @content;
   }
 }
