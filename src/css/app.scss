@@ -4,6 +4,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+.scroll-horizontal {
+  overflow: hidden;
+  max-width: 55rem;
+  padding: 0 12px;
+  display: flex;
+  cursor: grab;
+}
+.scroll-horizontal:active {
+  cursor: grabbing;
+}
 //? Navbar
 .header {
   height: 110px;
@@ -180,6 +190,10 @@
 .section-about-2 {
   padding-top: 30px;
   padding-bottom: 40px;
+  @include md-device {
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
 }
 .about-two {
   height: 380px;
@@ -189,4 +203,197 @@
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: multiply;
+  @include sm-device {
+    overflow: hidden;
+    align-items: normal;
+    height: auto;
+  }
+}
+.about-box-content {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  max-width: 400px;
+  @include sm-device {
+    border-radius: 0;
+    padding: 16px;
+  }
+  p {
+    @include sm-device {
+      margin-bottom: 8px;
+    }
+  }
+}
+//? Testimonials
+.testimonials {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  @include sm-device {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+}
+.img-testimonial {
+  width: 400px;
+  height: 360px;
+  border-radius: 9px;
+  @include sm-device-2 {
+    width: 100%;
+    height: auto;
+  }
+  @include md-device-2 {
+    margin-bottom: 16px;
+  }
+}
+.testimonials-content {
+  h5 {
+    max-width: 400px;
+    @include md-device-2 {
+      padding: 0;
+    }
+  }
+}
+.testimonials-mobile-content:first-child {
+  @include sm-device {
+    padding-bottom: 24px;
+  }
+}
+.testimonials-mobile-content {
+  @include md-device-2 {
+    justify-content: center;
+  }
+}
+//? Membros
+.top-title {
+  h4 {
+    @include sm-device {
+      font-size: 24px;
+    }
+  }
+}
+.img-member {
+  width: 250px;
+  border-radius: 8px;
+  @include sm-device-2 {
+    width: 150px;
+  }
+}
+.member-card {
+  width: min-content;
+  h5 {
+    @include sm-device-2 {
+      font-size: 20px;
+      align-self: start;
+    }
+  }
+}
+.member-description {
+  font-size: 16px;
+  @include sm-device-2 {
+    font-size: 14px;
+  }
+}
+.divider {
+  height: 2px;
+  width: 110px;
+  @include sm-device-2 {
+    display: none;
+  }
+}
+.divider-mobile {
+  height: 2px;
+  width: 100%;
+  display: none;
+  @include sm-device-2 {
+    display: block;
+  }
+}
+.cargo {
+  @include sm-device-2 {
+    padding-top: 0;
+    padding-bottom: 8px;
+  }
+}
+#members-scroll {
+  gap: 20px;
+  user-select: none;
+}
+//? Noticias
+.notices {
+  padding: 50px 0;
+  @include sm-device {
+    padding: 30px 0;
+  }
+}
+.img-card {
+  width: 334px;
+  height: 190px;
+  background-position: center;
+  background-size: cover;
+}
+#card-1 {
+  background-image: url('../assets/notice-1.jpg');
+}
+#card-2 {
+  background-image: url('../assets/notice-2.jpg');
+}
+#card-3 {
+  background-image: url('../assets/notice-3.jpg');
+}
+.notice-card {
+  width: min-content;
+  h6 {
+    line-height: 25px;
+  }
+}
+#notices-scroll {
+  gap: 25px;
+  user-select: none;
+}
+//? Eventos
+.mobile-show {
+  display: none;
+  @include sm-device {
+    display: block;
+  }
+}
+.event-carousel {
+  height: 311px;
+  border-radius: 8px;
+  @include sm-device {
+    height: 180px;
+  }
+}
+.eventos {
+  padding-bottom: 50px;
+  @include sm-device {
+    padding-bottom: 30px;
+  }
+}
+//? Fotos
+#fotos-scroll {
+  gap: 15px;
+}
+.img-fotos {
+  min-width: 245px;
+  height: 160px;
+  border-radius: 8px;
+  background-image: url('../assets/img-event.jpg');
+  background-size: cover;
+}
+.fotos-dolls {
+  gap: 10px;
+  @include sm-device {
+    display: none;
+  }
+}
+.doll {
+  width: 9px;
+  height: 9px;
+  border-radius: 50px;
+}
+.fotos {
+  padding-bottom: 50px;
+  @include sm-device {
+    padding-bottom: 30px;
+  }
 }

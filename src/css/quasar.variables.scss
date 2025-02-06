@@ -3,13 +3,30 @@ $primary: #11b80e;
 $secondary: #374835;
 $green-1: #d1e8c8;
 $green-2: #aad2a1;
+$green-3: #c2e7b4;
 $black: #141414;
 $grey: #888888;
 $grey-1: #333539;
+$grey-2: #252525;
+$grey-3: #d9d9d9;
+$grey-4: #414141;
+$grey-5: #656971;
 
 //* Breakpoints
+@mixin sm-device-2 {
+  @media (max-width: 460px) {
+    @content;
+  }
+}
+
 @mixin sm-device {
   @media (max-width: 660px) {
+    @content;
+  }
+}
+
+@mixin md-device-2 {
+  @media (max-width: 850px) {
     @content;
   }
 }
