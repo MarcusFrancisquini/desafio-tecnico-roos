@@ -6,10 +6,12 @@
     <q-page-container>
       <router-view />
     </q-page-container>
-    <!-- TODO colocar o Footer aqui também -->
+    <!--? footer -->
+    <FooterComponent />
   </q-layout>
 </template>
 
 <script setup>
 import NavbarComponent from 'src/components/NavbarComponent.vue'
+import FooterComponent from 'src/components/FooterComponent.vue'
 </script>

@@ -397,3 +397,46 @@
     padding-bottom: 30px;
   }
 }
+//? Footer
+.social-icons {
+  gap: 30px;
+}
+.footer-links {
+  gap: 5rem;
+  @include sm-device {
+    column-gap: 3rem;
+    row-gap: 2rem;
+  }
+}
+.footer-content {
+  row-gap: 2.5rem;
+}
+.logo-morais {
+  margin-left: 2px;
+}
+.footer-copyright {
+  padding-top: 9rem;
+  p {
+    font-size: 12px;
+  }
+  @include sm-device {
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    padding-top: 3rem;
+  }
+}
+.parceria-text {
+  padding-right: 3px;
+  @include sm-device {
+    display: block;
+    text-align: center;
+    padding-bottom: 6px;
+    padding-right: 0;
+  }
+}
+.footer {
+  @include sm-device {
+    padding: 30px 0;
+  }
+}
