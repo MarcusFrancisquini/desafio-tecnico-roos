@@ -1,6 +1,15 @@
 # Osidi (desafio-tecnico-roos)
 
-Desafio tecnico 
+Desafio técnico 
+
+## Acessar as outras telas (colocar no final da URL)
+```bash
+# lista de publicações
+/listaposts
+
+# publicação
+/post
+```
 
 ## Install the dependencies
 ```bash
