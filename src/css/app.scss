@@ -466,6 +466,9 @@
 //? Categorias
 .categorias-container {
   gap: 2rem;
+  @include md-device-2 {
+    gap: 0;
+  }
   @include sm-device {
     gap: 1rem;
   }
@@ -501,6 +504,14 @@
 }
 .categoria-content {
   flex: 1;
+  @include md-device-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include sm-device {
+    display: block;
+  }
 }
 .card-post {
   gap: 1rem;
@@ -510,7 +521,7 @@
   }
   @include sm-device {
     width: 100%;
-    gap: 0.5rem;
+    gap: 0.7rem;
   }
 }
 .img-post {
@@ -539,5 +550,40 @@
 .mobile-weight-change {
   @include sm-device {
     font-weight: 500;
+  }
+}
+.page-selector {
+  @include md-device-2 {
+    justify-content: start;
+  }
+}
+.selectors {
+  gap: 0.5rem;
+}
+.selector-num {
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+//? Post
+.post-image {
+  border-radius: 16px;
+}
+.compartilhar-container {
+  @include sm-device {
+    row-gap: 0.3rem;
+  }
+}
+.compartilhar-post {
+  gap: 0.7rem;
+}
+.post-media-icon {
+  box-shadow:
+    0px 3px 14px 2px rgba(72, 79, 95, 0.06),
+    0px 8px 10px 1px rgba(159, 171, 187, 0.03),
+    0px 5px 5px -3px rgba(190, 199, 214, 0.02);
+}
+.post-content p:last-of-type {
+  @include sm-device {
+    margin-bottom: 30px;
   }
 }

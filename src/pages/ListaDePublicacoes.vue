@@ -157,6 +157,16 @@
             <p class="ler-mais mobile-weight-change no-margin text-primary">Ler mais</p>
           </div>
         </div>
+        <div class="page-selector mobile-out row justify-end q-mb-xl">
+          <div class="selectors row items-center">
+            <q-icon name="chevron_left" color="grey-1" size="20px" />
+            <div class="selector-num bg-primary text-white">1</div>
+            <div class="selector-num text-grey-1">2</div>
+            <div class="selector-num text-grey-1">3</div>
+            <div class="selector-num text-grey-1">4</div>
+            <q-icon name="chevron_right" color="grey-1" size="20px" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
